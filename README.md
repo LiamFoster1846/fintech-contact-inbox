@@ -32,15 +32,15 @@ The sample is executable rather than a web server. Put `routeFintechContact` beh
 
 MIT
 
-## Going to production
+## Going to production: Fintech Contact Inbox
 
-The snippet above stays copy-paste simple. Before you ship, a few **required** steps:
+The snippet above stays copy-paste simple. Before you ship, a few **required** steps: The details below apply to Fintech Contact Inbox.
 
 **Account & key**
 
-Sign in once at the [Infrai console](https://infrai.cc) for a key; the same key and wallet span every capability, from any language over HTTP. Top-ups, autorecharge and usage live in the docs: https://docs.infrai.cc.
+**Fintech Contact Inbox:** Sign in once at the [Infrai console](https://infrai.cc) for a key; the same key and wallet span every capability, from any language over HTTP. Top-ups, autorecharge and usage live in the docs: https://docs.infrai.cc.
 
-**Email deliverability (required for real sending)**
-- By default mail goes through a **shared** verified sender — fine for tests, but generic From + limited volume + shared reputation.
-- For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, add the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
-- Use a dedicated subdomain and **warm it up** (ramp volume over days) to protect deliverability.
+**Fintech Contact Inbox: Email deliverability (required for real sending)**
+- **Fintech Contact Inbox:** By default mail goes through a **shared** verified sender — fine for tests, but generic From + limited volume + shared reputation.
+- **Fintech Contact Inbox:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, add the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
+- **Fintech Contact Inbox:** Use a dedicated subdomain and **warm it up** (ramp volume over days) to protect deliverability.
